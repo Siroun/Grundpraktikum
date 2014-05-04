@@ -1,0 +1,219 @@
+\documentclass[12pt, a4paper, twoside]{scrartcl}
+ \input{header.tex}
+
+\newcommand{\person}[1]{\textsc{#1}}
+
+ \begin{document}
+ %Titelseite u. Inhaltsverzeichnis
+\input{title.tex}
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\setcounter{page}{1}
+
+\section{Einleitung}
+\label{sec:einleitung}
+
+\section{Theorie}
+\label{sec:theorie}
+
+\subsection{Oberflächenspannung}
+Der Effekt der Kapillarität wird von Wechselwirkungen auf molekularer Ebene verursacht. Diese können in Zwei Arten unterteilt werden. Zu einem in die Kohäsionskräften, die innerhalb der Flüssigkeit wirken und zum anderen in die Adhäsionskräften, Kräften die zwischen der Flüssigkeit und einem Festkörper (Glas) oder einem Gas (Luft) auftreten.\newline
+\newline
+Die wichtigsten Kohäsionskräfte sind die Van-der-Waals-Kräfte und die Dipol-Dipol-Kräfte. Die Van-der-Waals-Kräfte sind schwache Kräfte, die zwischen Molekülen und Atomen wirken. Sie entstehen durch zufällige Ladungsverschiebung innerhalb eines Moleküls durch seine freien Elektronen. Diese Ladungsverschiebungen verursachen, dass ein Molekül kurzzeitig zu einem Dipol wird und so mit anderen Molekülen wechselwirken kann. 
+Dipol-Dipol-Kräfte hingegen werden zwischen Molekülen erzeugt, die ein dauerhaftes Dipolmoment besitzen.\newline
+\newline
+Hält man einen Festkörper in eine Flüssigkeit so entstehen zwischen den Molekülen der Flüssigkeit und den Molekülen des Festkörpers Adhäsionskräfte. Sind diese Adhäsionskräfte größer als die Kohäsionskräfte innerhalb der Flüssigkeit so kann man beobachten wie sich die Flüssigkeit am Rand des Festkörpers hochzieht. Dieser Effekt heißt Kapillarität und ist besonders gut zu beobachten, indem man ein Glaskapillare in Wasser hält. Man sieht wie sich das Wasser im Inneren der Kapillare einen höheren Pegelstand als im Äußeren der Kapillare hat. Durch die stärkeren Adhäsionskräfte leistet das Wasser Arbeit entgegen der Gravitationskraft, was den Begriff der Oberflächenspannung $\sigma$ motiviert. \[\textup dW=\sigma\cdot\textup dA\hspace{1cm}\Leftrightarrow\hspace{1cm}\sigma=\frac{\textup dW}{\textup dA}\] Steigt das Wasser in der Kapillare um die noch zu bestimmende Höhe h an, so verändert sich die potentielle Energie um \[\textup dE_{Pot}=m\cdot g\cdot\textup dh=\rho\cdot\pi\cdot R^2\cdot h\cdot g\cdot\textup dh\] und die Oberflächenenergie um \[\textup dE_{O}=-2\cdot\pi\cdot R\cdot\sigma\cdot\textup dh.\]Dabei ist $\rho$ die Dichte des Wassers und $R$ der Radius der Kapillare. Die Energieerhaltung liefert 
+
+\begin{align*}
+\textup dE_{Pot}+\textup dE_{O}&=0 \\
+\Leftrightarrow\pi\cdot R^2\cdot\rho\cdot h \cdot g\cdot\textup dh&=2\pi\cdot R\cdot\sigma\cdot\textup dh \\
+\Leftrightarrow\hspace{1.5cm} R\cdot\rho\cdot h\cdot g&=2\sigma \\
+\Leftrightarrow\hspace{3.15cm} h&=\frac{2\sigma}{R\cdot\rho\cdot g}
+\end{align*}
+
+
+\subsection{Dynamische Viskosität}
+Die Viskosität $\eta=v\cdot\rho$ eines Fluids ist ein Maß für dessen Zähflüssigkeit.\linebreak
+
+Es existieren zwei verschiedene Strömungsarten die bei Fluiden auftreten können. Die laminare Strömung, bei der keine Turbolenzen auftreten, die Fluide also in Schichten strömen und die turbulente Strömung, bei der Verwirblungen auftreten, so dass die einzelnen Schichten eines Fluids untereinander vermischt werden.\newline
+Das Verhältnis von Trägheits- zu Zähigkeitskräften wird durch die dimensionslose  Reynoldzahl Re angegeben. Sie ist ein Maß dafür ob eine Strömung laminar oder turbolent ist. Es gilt
+\begin{align*}
+  \rm{Re}=\frac{\rho\cdot v\cdot d}{\eta},
+\end{align*}
+ wobei $\rho$ die Dichte des Fluids, $d$ die Länge des Gegenstandes in dem sich die Strömung befindet und $v$ die durchschnittliche Geschwindigkeit  angibt.\linebreak
+
+Verursacht wird die Viskosität von der inneren Reibung die in Flüssigkeiten auftritt. Die Bewegungsgleichung einer solchen Flüssigkeit in einem Rohr mit Berührungsfläche $A=2\cdot\pi\cdot r\cdot l$ ist gegeben durch \[F=\eta\cdot A\cdot\frac{\textup dv}{\textup dz}.\]
+
+
+
+\section{Durchführung}
+\label{sec:durchfuehrung}
+
+\section{Auswertung}
+\label{sec:auswertung}
+
+In der Tabelle \ref{tab:l_kap} und Tabelle \ref{tab:d_kap} sind die gemessenen Längen $l$ und Durchmesser $d$ der Kapillare.
+Aus den Werten in Tabelle \ref{tab:mohrsche_waage} und der Formel \eqref{eq:} folgen die relativen Dichten von destilliertem Wasser, Methanol und Ethylenglykol und mit der Vorraussetzung $\rho _{Wasser} = 10^{3}\cdot\kilogramm\cdot\meter^{-3}$ die Dichten in Tabelle \ref{tab:dichte}.
+
+\begin{wraptable}{!hr}{5cm}
+\centering
+\begin{tabular}{r|l}
+    Kapillar & $l[\milli\meter]$\\
+    \hline
+    Rot & $231(1)$\\
+    Blau & $220(1)$\\
+    Grün & $228(1)$\\
+    
+ \end{tabular} 
+ \caption{\label{tab:l_kap}Länge $l$ der Kapillare}
+\end{wraptable}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c||c|c}
+    Kapillar & Messung 1 & Messung 2 & Messung 3 & Verwendet & rel. Fehler\\
+    \hline
+    Rot & $69(2)$ & $84(2)$ & $86(2)$ & $85(2)$ & $ 2.4\%$\\
+    Blau & $116(2)$ & $117(2)$ & $117(2)$ & $117(2)$ & $ 1.7\%$\\
+    Grün & $181(2)$ & $179(2)$ & $181(2)$ & $180(2)$ & $ 1.1\%$\\
+    
+ \end{tabular} 
+ \caption{\label{tab:d_kap} Durchmesser der Kapillare in $ 10^{-5} \meter$}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c|c|c|c|c|c|c}
+    Auslenkung $r[\centi\meter]$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+    \hline
+    \hline
+    Wasser & & & & & & & & $11$ & $100$ \\
+    \hline
+    Methanol & & & $1$ & $10$ & & & & $100$ & \\
+    \hline
+    Ethylenglykol & & & & $100$ & & $100$ & & $10$ & \\
+    
+ \end{tabular} 
+ \caption{\label{tab:mohrsche_waage}Gewichteverteilung bei der Mohrschen Waage}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c}
+    Flüssigkeit & Dichte $\rho [\kilogramm\cdot\meter^{-3}]$\\
+    \hline
+    Wasser & $1.00\cdot 10^{3}$\\
+    \hline
+    Methanol & $ 0.85\cdot 10^{3}$\\
+    \hline
+    Ethylenglykol & $ 1.09 \cdot 10^{3}$\\
+    
+ \end{tabular} 
+ \caption{\label{tab:dichte}Dichte}
+\end{table}
+
+\subsection{Kapillarität}
+
+Die Messwerte der Höhenunterschiede $h_{Kap}$ zur Bestimmung der Kapillarität sind in Tabelle \ref{tab:h_kap_was} für destilliertes Wasser, in Tabelle \ref{tab:h_kap_met} für Methanol und in Tabelle \ref{tab:h_kap_eth} für Ethylenglykol aufgeführt.
+Aus diesen Messwerten ergeben sich nach der Formel \eqref{eq:} die Werte für die Oberflächenspannung $\sigma$ und aus der Formel \eqref{eq:} die Fehler in den Tabellen \ref{tab:oberflaechenspannung_wasser}, \ref{tab:oberflaechenspannung_methanol} und \ref{tab:oberflaechenspannung_ethylenglykol}, sowie in der Grafik \ref{img:oberflaechenspannung}.
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c}
+    Kapillar & Messung 1 & Messung 2 & Messung 3\\
+    \hline
+    Rot & $35$ & $37$ & $38$ \\
+    Blau & $9$ & $23$ & $24$ \\
+    Grün & $15$ & $17$ & $15$ \\
+    
+ \end{tabular} 
+ \caption{\label{tab:h_kap_was}$h_{Kap} \rm{in} \milli\meter$ für destilliertes Wasser mit einem Fehler von $\pm 1\milli\meter$}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c}
+    Kapillar & Messung 1 & Messung 2 & Messung 3\\
+    \hline
+    Rot & $15$ & $14$ & $14$\\
+    Blau & $10$ & $10$ & $11$ \\
+    Grün & $6$ & $6$ & $7$\\
+    
+ \end{tabular} 
+ \caption{\label{tab:h_kap_met}$h_{Kap} \rm{in} \milli\meter$ für Methanol mit einem Fehler von $\pm 1\milli\meter$}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c}
+    Kapillar & Messung 1 & Messung 2 & Messung 3\\
+    \hline
+    Rot & $22$ & $22$ & $24$\\
+    Blau & $20$ & $16$ & $15$ \\
+    Grün & $10$ & $10$ & $11$\\
+    
+ \end{tabular} \label{tab:h_kap_eth}
+ \caption{$h_{Kap} \rm{in} \milli\meter$ für Ethylenglykol mit einem Fehler von $\pm 1\milli\meter$}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c}
+    Kapillar/Messung & $\sigma _{Wasser}$ & $\sigma _{Methanol}$ & $\sigma _{Ethylenglykol}$\\
+    \hline
+    Rot 1 & $ 73.0$ & $ 26.5$ & $ 50.0$\\
+    Rot 2 & $ 77.1$ & $ 24.8$ & $ 50.0$\\
+    Rot 3 & $ 79.2$ & $ 24.8$ & $ 54.5$ \\
+    \hline
+    Blau 1 & $ 25.8$ & $ 24.4$ & $ 62.5$ \\
+    Blau 2 & $ 66.0$ & $ 24.4$ & $ 50.0$ \\
+    Blau 3 & $ 68.9$ & $ 26.8$ & $ 46.9$ \\
+    \hline
+    Grün 1 & $ 66.2$ & $ 22.5$ & $ 48.1$ \\
+    Grün 2 & $ 75.0$ & $ 22.5$ & $ 48.1$ \\
+    Grün 3 & $ 66.2$ & $ 26.3$ & $ 52.9$ \\
+    
+ \end{tabular} \label{tab:oberflaechenspannung_wasser}
+ \caption{Oberflächenspannung $\sigma$ in $ $}
+\end{table}
+
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{rl}
+    Kapillar & $t_A$\\
+    \hline
+    Rot & 67\\
+    Blau & 20 \\
+    Grün & 6\\
+    
+ \end{tabular} \label{tab:t_A}
+ \caption{Ausflusszeit $t_A$ von $20.5\milli\liter$ destilliertem Wasser bei $50\centi\meter$ Füllhöhe}
+\end{table}
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{r|c|c|c|c|c|c|c|c|c|c}
+    Messung & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+    \hline
+    \hline
+    $h_1[\centi\meter]$ & $49$ & $45$ & $40$ & $35$ & $30$ & $50$ & $40$ & $50$ & $46$ & $42$  \\
+    \hline
+    $h_2[\centi\meter]$ & $45$ & $40$ & $35$ & $30$ & $25$ & $40$ & $30$ & $43.5$ & $42.5$ & $38.5$ \\
+    \hline
+    $t[\second]$ & $52$ & $75$ & $83$ & $99$ & $112$ & $142$ & $182$ & $45$ & $49$ & $54$ \\
+    
+ \end{tabular} \label{tab:werte}
+ \caption{Länge $l$ der Kapillare in $\milli\meter$}
+\end{table}
+
+
+\section{Diskussion}
+\label{sec:diskussion}
+
+\end{document}

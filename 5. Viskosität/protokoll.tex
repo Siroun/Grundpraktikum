@@ -24,26 +24,67 @@ Die wichtigsten Kohäsionskräfte sind die Van-der-Waals-Kräfte und die Dipol-D
 Dipol-Dipol-Kräfte hingegen werden zwischen Molekülen erzeugt, die ein dauerhaftes Dipolmoment besitzen.\newline
 \newline
 Hält man einen Festkörper in eine Flüssigkeit so entstehen zwischen den Molekülen der Flüssigkeit und den Molekülen des Festkörpers Adhäsionskräfte. Sind diese Adhäsionskräfte größer als die Kohäsionskräfte innerhalb der Flüssigkeit so kann man beobachten wie sich die Flüssigkeit am Rand des Festkörpers hochzieht. Dieser Effekt heißt Kapillarität und ist besonders gut zu beobachten, indem man ein Glaskapillare in Wasser hält. Man sieht wie sich das Wasser im Inneren der Kapillare einen höheren Pegelstand als im Äußeren der Kapillare hat. Durch die stärkeren Adhäsionskräfte leistet das Wasser Arbeit entgegen der Gravitationskraft, was den Begriff der Oberflächenspannung $\sigma$ motiviert. \[\textup dW=\sigma\cdot\textup dA\hspace{1cm}\Leftrightarrow\hspace{1cm}\sigma=\frac{\textup dW}{\textup dA}\] Steigt das Wasser in der Kapillare um die noch zu bestimmende Höhe h an, so verändert sich die potentielle Energie um \[\textup dE_{Pot}=m\cdot g\cdot\textup dh=\rho\cdot\pi\cdot R^2\cdot h\cdot g\cdot\textup dh\] und die Oberflächenenergie um \[\textup dE_{O}=-2\cdot\pi\cdot R\cdot\sigma\cdot\textup dh.\]Dabei ist $\rho$ die Dichte des Wassers und $R$ der Radius der Kapillare. Die Energieerhaltung liefert 
-
 \begin{align*}
 \textup dE_{Pot}+\textup dE_{O}&=0 \\
 \Leftrightarrow\pi\cdot R^2\cdot\rho\cdot h \cdot g\cdot\textup dh&=2\pi\cdot R\cdot\sigma\cdot\textup dh \\
 \Leftrightarrow\hspace{1.5cm} R\cdot\rho\cdot h\cdot g&=2\sigma \\
 \Leftrightarrow\hspace{3.15cm} h&=\frac{2\sigma}{R\cdot\rho\cdot g}
+\end{align*}\newline
+
+Analog zur Oberflächenspannung zwischen Flüssigkeiten und Luft kann man die allgemeine Grenzflächenspannung $\sigma_{i,k}$ zwischen zwei belibiegen Stoffen $i$ und $k$ definieren.
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.8]{grenzflaechen.png}
+\caption{Zur Definition von Grenzflächen\protect\footnotemark}
+\end{figure}
+\footnotetext{http://lp.uni-goettingen.de/get/text/5065}
+
+Wie man der Grafik entnemen kann können $\sigma_{2,3}$ und $\sigma_{1,3}$ nur in entgegengesetzte Richtung wirken. Also muss
+\begin{align*}
+ \sigma_{2,3}-\sigma_{1,3}=-\sigma_{1,2}\cdot\cos\theta
 \end{align*}
+gelten.\newline
+
+Um die Dichten der untersuchten Flüssigkeiten zu bestimmen wird die Mohr'sche Waage verwendet.
+
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.6]{mwaage.png}
+\caption{Die Mohrsche Waage\protect\footnotemark}
+\end{figure}
+\footnotetext{https://lp.uni-goettingen.de/get/text/3638}
+
+Es wird ein Körper mit bekanntem Volumen in die zu untersuchende Flüssigkeit getaucht. Durch die vom Körper verdrängte Flüssigkeit entsteht ein statischer Auftrieb, aus dem nach dem archimedischen Prinzip die Dichte der Flüssigkeit ermittelt werden. Um den entstehenden Auftrieb zu messen wird der Lastarm mittels Gewichten ausgeglichen.
+
 
 
 \subsection{Dynamische Viskosität}
 Die Viskosität $\eta=v\cdot\rho$ eines Fluids ist ein Maß für dessen Zähflüssigkeit.\linebreak
 
 Es existieren zwei verschiedene Strömungsarten die bei Fluiden auftreten können. Die laminare Strömung, bei der keine Turbolenzen auftreten, die Fluide also in Schichten strömen und die turbulente Strömung, bei der Verwirblungen auftreten, so dass die einzelnen Schichten eines Fluids untereinander vermischt werden.\newline
-Das Verhältnis von Trägheits- zu Zähigkeitskräften wird durch die dimensionslose  Reynoldzahl Re angegeben. Sie ist ein Maß dafür ob eine Strömung laminar oder turbolent ist. Es gilt
+Das Verhältnis von Trägheits- zu Zähigkeitskräften wird durch die dimensionslose  Reynoldzahl Re angegeben. Sie ist ein Maß dafür ob eine Strömung laminar oder turbulent ist. Es gilt
 \begin{align*}
   \rm{Re}=\frac{\rho\cdot v\cdot d}{\eta},
 \end{align*}
  wobei $\rho$ die Dichte des Fluids, $d$ die Länge des Gegenstandes in dem sich die Strömung befindet und $v$ die durchschnittliche Geschwindigkeit  angibt.\linebreak
+ 
+Verursacht wird die Viskosität von der inneren Reibung $F_r=-\eta\cdot A\cdot\frac{\rm dv}{\rm dr}=-\eta\cdot 2\pi l r\cdot\frac{\rm dv}{\rm dr}$ die entsteht, wenn eine Flüssigkeit durch ein Rohr fließt. Aufgrund des Druckunterschieds $\delta p=(p_1-p_2)$ wirkt ihr dir Kraft $F_p=(p_1-p_2)\cdot\pi\cdot r^2$ entgegen. Mit der Randbedingung v(R)=0 erhält man
+\begin{align*}
+\Rightarrow\hspace{1cm}-\eta\cdot2 l\cdot\frac{\rm dv}{\rm dr}&=(p_1-p_2)\cdot r \\
+\Leftrightarrow\hspace{1.0cm}-\int_r^R\frac{\rm dv}{\rm dr}\rm dr&=\int_r^R\frac{(p_1-p_2)}{2l\cdot\eta} \\
+\Leftrightarrow\hspace{2.35cm}v(r)&=\frac{(p_1-p_2)}{4\eta\cdot l}(R^2-r^2)
+\end{align*}
+Damit lässt sich die gesamte Flüssigkeitsmenge, die pro Zeiteinheit t durch einen Hohlzylinder fließt angeben durch $\rm dV=2\pi\cdot r\cdot v(r)\cdot t\cdot dt$. Integrieren liefert
+\begin{align*}
+\Rightarrow \hspace*{1cm}\int_0^R\rm dV\,\rm dr&=2\pi\cdot\frac{(p_1-p_2)}{4l\cdot\eta}\cdot t\cdot\int_0^Rr(R^2-r^2)\,\rm dr \\
+\Leftrightarrow \hspace*{2.4cm}V&=\frac{\pi\cdot(p_1-p_2)}{8l\cdot\eta}\cdot t\rm,
+\end{align*}
+woraus man die Hagen-Poiseille Gleichung der laminaren Rohströmung erhält
+\begin{align*}
+\dot V&=\frac{\pi\cdot(p_1-p_2)}{8l\cdot\eta}\cdot.
+\end{align*}
+Diese Gleichung sagt aus, wie der Volumenstrom vom Druckgradienten $(p_1-p_2)/l$ und von der Viskosität des Fluids abhängt. Dies zu wissen ist zum Beispiel bei der Wahl des Motoröls im Auto entscheidend. Da man den Rohradius in dem das Öl zufließt nicht verändern kann war es früher notwendig verschiedene Motoröle mit verschiedenen Viskositäten $\eta$ zu verwenden um auf temperaturbedingte Druckunterschiede zu reagieren.
 
-Verursacht wird die Viskosität von der inneren Reibung die in Flüssigkeiten auftritt. Die Bewegungsgleichung einer solchen Flüssigkeit in einem Rohr mit Berührungsfläche $A=2\cdot\pi\cdot r\cdot l$ ist gegeben durch \[F=\eta\cdot A\cdot\frac{\textup dv}{\textup dz}.\]
 
 
 
